@@ -1,0 +1,19 @@
+.content {
+  display: flex;
+  flex-direction: column;
+
+  padding: 2rem;
+}
+
+.emailInput {
+  padding: 1rem;
+  margin-bottom: 1rem;
+
+  border-radius: 1em;
+}
+
+.emailSubmit {
+  background-color: white;
+  padding: 1rem;
+  border-radius: 1em;
+}

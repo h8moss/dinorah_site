@@ -1,0 +1,35 @@
+.buttons {
+  display: flex;
+  position: relative;
+  background-color: #eee;
+}
+
+.buttons > button {
+  flex: 1;
+  padding: 0.5rem;
+  border: none;
+  background-color: transparent;
+
+  z-index: 2;
+}
+
+
+.content {
+  height: 20rem;
+  background-color: var(--main-color);
+  color: white;
+  overflow-y: auto;
+}
+
+.selectionMarker {
+  height: 100%;
+  width: 33%;
+
+  background-color: var(--main-color);
+
+  position: absolute;
+  z-index: 1;
+  top: 0px;
+
+  transform: skew(20deg);
+}

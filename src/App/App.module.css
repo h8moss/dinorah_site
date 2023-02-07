@@ -1,0 +1,29 @@
+.content {
+  display: flex;
+  flex-direction: column;
+
+  text-align: center;
+
+  overflow-x: hidden;
+
+}
+
+.content > div {
+  width: 100%;
+}
+
+.title {
+  height: 80vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  background-color: var(--main-color);
+  color: white;
+}
+
+.about > p{
+  text-align: justify;
+  padding: 0px 4rem;
+}
