@@ -1,8 +1,7 @@
-import { useEffect, useRef, useState } from "react";
-import ContactForm from "../components/ContactForm";
 import style from "./App.module.css";
 
-import doctorImg from "./stock_doctor.png";
+import ContactForm from "../common/components/ContactForm";
+import PostList from "../common/components/PostList";
 
 const App = () => {
   return (
@@ -11,7 +10,6 @@ const App = () => {
         <h1>Dinorah Fonseca</h1>
         <p>Adictologa</p>
       </div>
-
       <div className={style.about}>
         <h2>Más sobre mi</h2>
         <p>
@@ -38,6 +36,7 @@ const App = () => {
         </p>
       </div>
       <ContactForm />
+      <PostList />
     </div>
   );
 };
