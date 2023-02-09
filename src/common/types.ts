@@ -1,11 +1,13 @@
 import { Timestamp } from "firebase/firestore";
 
+export type PostType = "blog" | "youtube" | "tik-tok";
+
 export type PostData = {
   body: string | null;
   url: string | null;
   tags: string[];
   title: string;
-  type: "blog" | "youtube" | "tik-tok";
+  type: PostType;
 
   created: Timestamp;
 };
