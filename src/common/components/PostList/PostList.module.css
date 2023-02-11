@@ -5,3 +5,14 @@
   row-gap: 1rem;
   padding: 1rem;
 }
+
+.loadAllButton {
+  background-color: var(--main-color);
+  border: none;
+  padding: 1rem;
+  border-radius: 1rem;
+  color :white;
+  margin: 1rem;
+
+  cursor: pointer;
+}

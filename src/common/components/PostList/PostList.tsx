@@ -2,6 +2,7 @@ import usePosts from "../../hooks/usePosts";
 import PostView from "./PostView";
 
 import style from "./PostList.module.css";
+import { motion } from "framer-motion";
 
 const PostList = () => {
   const { posts, loadRest, canLoadMore } = usePosts();
@@ -25,7 +26,16 @@ const PostList = () => {
               <PostView post={v} />
             ))}
           </div>
-          {canLoadMore && <button onClick={loadRest}>Cargar todos</button>}
+          {canLoadMore && (
+            <motion.button
+              animate={{ scale: 1 }}
+              whileHover={{ scale: 1.1 }}
+              className={style.loadAllButton}
+              onClick={loadRest}
+            >
+              Cargar todos
+            </motion.button>
+          )}
         </div>
       )}
     </>
