@@ -1,0 +1,82 @@
+.card {
+  box-shadow: 5px 5px 10px rgba(0,0,0,0.3);
+  padding: 0.5rem;
+  border-radius: 1rem;
+
+  text-overflow: clip;
+  text-align: justify;
+  overflow: hidden;
+}
+
+.card h1, .card h2, .card h3, .card h4, .card h5, .card h6 
+{
+  text-align: center;
+}
+
+.card.blog {
+  background-color: #faf;
+  justify-content: start;
+  position: relative;
+
+  width: 320px;
+  height: 320px;
+}
+
+.card .date {
+  opacity: 0.5;
+}
+
+.card.blog > p {
+  height: 60%;
+  overflow: hidden;
+}
+
+.card.blog > .fader {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-image: linear-gradient(to bottom, transparent 50%, #faf 95%);
+  pointer-events: none;
+  height: 100%;
+  width: 100%;
+}
+
+.card.youtube {
+  background-color: #f07;
+  grid-area: span 2 / span 3;
+}
+
+.card.youtube > iframe {
+  aspect-ratio: 16 / 9;
+  width: 90%;
+  margin: auto;
+  display: block;
+}
+
+.card.tik-tok {
+  background-color: #70f;
+  height: 900px;
+  grid-area: span 3 / span 1;
+}
+
+.card.tik-tok > iframe {
+  height: 85%;
+  width: 95%;
+  overflow: hidden;
+  margin: auto;
+  display: block;
+}
+
+.card .tags {
+  display: flex;
+  padding: 0.25rem;
+  flex-wrap: wrap;
+}
+
+.card .tags > p {
+  margin: 0 0.2rem;
+  background-color: rgba(0,0,0,0.5);
+  padding: 0.5rem;
+  border-radius: 1rem;
+  color: white;
+}
